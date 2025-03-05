@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository is a place where I learn about Data Engineering.
+Learn the core principles of data engineering by constructing a complete data pipeline from the ground up. Develop practical skills using industry-standard tools and best practices.
 
 This repository is based on the [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) by DataTalksClub.
 
@@ -10,14 +10,12 @@ This repository is based on the [Data Engineering Zoomcamp](https://github.com/D
 
 **1. Docker**
 
-Using Docker and Python scripts to design and implement a data pipeline to get data from the website and load them into the Postgres database.
+- Docker and Docker Compose.
+
+- Running PostgreSQL with Docker.
 
 **2. Kestra**
 
-Using Kestra for automating the workflow.
+- Workflow orchestration with Kestra.
 
-3. 
 
-4.
-  
-5.  

@@ -1,6 +1,6 @@
 # Docker and PostgreSQL
 
-Using Docker and PostgreSQL to build a simple data pipeline to ingest data.
+Using Docker and PostgreSQL to build a simple data pipeline to ingest data. Retrieve the file from the website and import the data into the database in batches.
 
 Build the pipeline:
 

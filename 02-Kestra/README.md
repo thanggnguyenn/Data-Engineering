@@ -46,14 +46,21 @@ Processing time of the Yellow Taxi dataset:
 
 Since the Yellow Taxi dataset is bigger than the Green Taxi dataset, the processing time of the Yellow Taxi dataset is longer.
 
-**2019 January dataset processing time**
+**2019 January Green Taxi dataset processing time**
 
 ![image](https://github.com/user-attachments/assets/cc8e365d-dd08-417c-9e7f-f750cebcce09)
 
-**2019 February dataset processing time**
+**2019 February Green Taxi dataset processing time**
 
 ![image](https://github.com/user-attachments/assets/a99fc44e-782a-498d-a673-8029a2f39ea6)
 
+**2019 January Yellow Taxi dataset processing time**
+
+![image](https://github.com/user-attachments/assets/0ccffeb5-faf6-42f6-b068-252805656925)
+
+The *yellow_add_unique_id_and_filename* task had two attempts (the first one failed and the second one run successfully in 10 minutes).
+
+The *yellow_merge_data* task took 39 minutes to complete, which is the longest task.
 
 **4. Challenges and Errors**
 

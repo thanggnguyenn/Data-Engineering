@@ -21,3 +21,9 @@ docker run -it \
     --table_name=yellow_taxi_trips \
     --url=https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet
 ```
+
+Docker Compose to setup and run PostgreSQL and PGAdmin:
+
+```
+docker compose up
+```

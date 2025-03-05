@@ -42,7 +42,7 @@ I'm going to use the data from this [link](https://github.com/DataTalksClub/nyc-
 
 Processing time of the Green Taxi dataset: loaded 1206603 rows of data (January and February of 2019) into the databases in roughly 7 minutes.
 
-Processing time of the Yellow Taxi dataset: 
+Processing time of the Yellow Taxi dataset: took about 45 minutes to run successfully the workflow.
 
 Since the Yellow Taxi dataset is bigger than the Green Taxi dataset, the processing time of the Yellow Taxi dataset is longer.
 

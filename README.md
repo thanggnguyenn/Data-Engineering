@@ -10,12 +10,12 @@ This repository is based on the [Data Engineering Zoomcamp](https://github.com/D
 
 **1. Docker**
 
-- Docker and Docker Compose.
+- Docker and Docker Compose to build and run one image or many images in one container.
 
-- Running PostgreSQL with Docker.
+- Running PostgreSQL with Docker to create a data pipeline to ingest data from the Internet into the database.
 
 **2. Kestra**
 
-- Workflow orchestration with Kestra.
+- Workflow orchestration with Kestra: use Kestra to automate the above workflow. You can shcedule to run on the first day of every month to collect data using Trigger. Another function is that to backfill missing months before the current month.
 
 

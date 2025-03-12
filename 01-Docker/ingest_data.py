@@ -3,6 +3,7 @@ import os
 import pandas as pd
 from time import time
 from sqlalchemy import create_engine
+import pyarrow.parquet as pq
 
 def main(params):
     user = params.user
@@ -14,7 +15,7 @@ def main(params):
     url=params.url
     parquet_name = 'output.parquet'
 
-    # download the CSV
+    # download the Parquet file
     os.system(f"wget {url} -O {parquet_name}")
 
 
@@ -22,15 +23,10 @@ def main(params):
     engine = create_engine(f"postgresql://{user}:{password}@{host}:{port}/{db}")
     engine.connect()
 
-    # read parquet file
-    df = pd.read_parquet(parquet_name)
-    df.to_csv("Taxi_data.csv")
-    # print(pd.io.sql.get_schema(df,name=table_name, con=engine))
-    # print("Schema created!")
-
-    # read CSV file
-    df_iter = pd.read_csv("Taxi_data.csv", iterator=True, chunksize=100000)
-    print("CSV file is created and read!")
+    # read Parquet file
+    file = pq.ParquetFile(file_name)
+    df = next(file.iter_batches(batch_size=10)).to_pandas()
+    df_iter = file.iter_batches(batch_size=100000)
 
     # first iteraton
     df1 = next(df_iter)

@@ -8,7 +8,7 @@ I would like to present the results of `postgres_taxi.yml` file
 
 Building an ETL pipeline to ingest the Yellow Taxi data from the [NYC Taxi and Limousine Commission - TLC](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) and load it into a Postgres database. Starting with data extraction from CSV files, and load them into a local Postgres database running in a Docker container.
 
-I'm going to use the data from this [link](https://github.com/DataTalksClub/nyc-tlc-data/releases) for the workflow.
+I used the data from this [link](https://github.com/DataTalksClub/nyc-tlc-data/releases) for the workflow.
 
 **2. Execution Process**
 

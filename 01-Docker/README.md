@@ -2,6 +2,8 @@
 
 Using Docker and PostgreSQL to build a simple data pipeline to ingest data. Retrieve the file from the website and import the data into the database in batches.
 
+File `ingest_data.py` is used to run the workflow. First, it will download the file from the website in the Parquet format file. Then using `Pandas, SQLAlchemy` to preproces the data and create a data schema before loading the data into Postgres database.
+
 Build the pipeline:
 
 ```

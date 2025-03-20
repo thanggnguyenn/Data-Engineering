@@ -8,6 +8,8 @@ This repository is based on the [Data Engineering Zoomcamp](https://github.com/D
 
 ## Index
 
+For more information in each part, please read the `READ_ME.md` file inside.
+
 **1. Docker**
 
 - Docker and Docker Compose to build and run one image or many images in one file.

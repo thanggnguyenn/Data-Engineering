@@ -32,7 +32,7 @@ Utilize Docker Compose to set up and run multiple containers, creating a seamles
 
 Successfully uploaded the green taxi dataset into BigQuery table.
 
-However, the volumes of the yellow taxi dataset is too large to load from local machine to Cloud Storage using Kestra. I had to use Python code to upload raw Parquet files into Cloud Storage. This is the `web_to_gcs` file.
+However, the volumes of the yellow taxi dataset is too large to load from local machine to Cloud Storage using Kestra. I had to use Python code to upload raw Parquet files into Cloud Storage. This is the `web_to_gcs` file. Results: it took about 30 seconds to successfully upload Parquet files from data source on the website into Google CLoud Storage.
 
 
 

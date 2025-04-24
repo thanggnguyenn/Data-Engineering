@@ -22,4 +22,6 @@ For more information in each part, please read the `READ_ME.md` file inside.
 
 - Workflow orchestration with Kestra: use Kestra to automate the above workflow. You can shcedule to run on the first day of every month to collect data using Trigger. Another function is that to backfill missing months before the current month.
 
+**3. Data warehouse**
 
+- Using BigQuery as data warehouse to ingest Parquet files which were loadded into Cloud Storage.

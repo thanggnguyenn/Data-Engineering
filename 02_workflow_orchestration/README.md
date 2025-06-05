@@ -35,10 +35,10 @@ The amount of data and processing time for each solution
 
 |Tools \ DB | Kestra | Airflow | SQL |
 |:----------:|:----------|:----------:|:----------:|
-| PostgreSQL - Green  | 1,206,603 rows of data (January and February of 2019) <br> 7 minutes  | None  | None  |
+| PostgreSQL - Green  | 1,206,603 rows of data (Jan to Feb of 2019) <br> 7 minutes  | None  | None  |
 | PostgreSQL - Yellow  | None  | None  | None |
 | Big Query - Green   | None  | None  | None  |
-| Big Query - Yellow   | None  | None  | None  |
+| Big Query - Yellow   |20,332,092 rows of data (Jan to Jun of 2024) / 3.84 GB <br> 3 mins 14.14 secs | None  | 1,000,000 rows of data (one month) / 400 MB <br> 30 secs |
 
 Explain the results:
 

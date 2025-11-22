@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: staging
+  - database: [the name of the database (dataset in BigQuery)]
+  - schema: [the schema ...]
+  - tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
+
+      

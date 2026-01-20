@@ -1,22 +1,53 @@
-# Docker and PostgreSQL
+# Docker, Python, and PostgreSQL
 
-Using Docker and PostgreSQL to build a simple data pipeline to ingest data. Retrieve the file from the website and import the data into the database in batches.
+## Introduction
 
-File `ingest_data.py` is used to run the workflow. First, it will download the file from the website in the Parquet format file. Then using `Pandas, SQLAlchemy` to preproces the data and create a data schema before loading the data into Postgres database.
+In this section, Python and PostgreSQL were used to build a simple data pipeline which would be run in Docker containers. The flow of pipeline was to retrieve the file from the website, validate data, and import the data into the database in batches. File `ingest_data.py` was the script used to run the workflow.
 
-To run this pipeline on Google Cloud Platform, first create a Compute Engine service then use SSH keys to connect from local machine to the cloud service.
+Optional: To run this pipeline on Google Cloud Platform, first create a Compute Engine service then use SSH keys to connect from local machine to the cloud service.
 
-**Results:** Built and ran successfully the data pipeline in local machine with Docker and use Compute Engine in Google Cloud Platform to run the same pipeline.
+Tech stack: Python, PostgreSQL, Docker, GCP.
 
+## Getting started
 
+### Prerequisites
 
-Build the pipeline:
+Docker and Python installed on your machine.
+
+### Installation
+
+**Clone the folder**
+
+```
+mkdir de_pipeline && cd de_pipeline
+
+git init
+
+git remote add -f origin https://github.com/username/repository-name.git
+
+git config core.sparseCheckout true
+
+echo "folder-name/*" >> .git/info/sparse-checkout
+
+git pull origin main
+
+```
+
+## How to run the code
+
+1. Build the pipeline:
 
 ```
 docker build -t taxi_ingest:v001 .
 ```
 
-Run the pipeline with Docker:
+2. Setup and run PostgreSQL and PGAdmin using Docker Compose:
+
+```
+docker compose up
+```
+
+3. Run the pipeline with Docker:
 
 ```
 docker run -it \
@@ -30,8 +61,6 @@ docker run -it \
     --url=https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet
 ```
 
-Docker Compose to setup and run PostgreSQL and PGAdmin:
+## Results
 
-```
-docker compose up
-```
+Built and ran successfully the data pipeline in local machine with Docker and use Compute Engine in Google Cloud Platform to run the same pipeline.

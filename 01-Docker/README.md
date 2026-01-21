@@ -16,26 +16,11 @@ Docker and Python installed on your machine.
 
 ### Installation
 
-**Clone the folder**
-
-```
-mkdir de_pipeline && cd de_pipeline
-
-git init
-
-git remote add -f origin https://github.com/username/repository-name.git
-
-git config core.sparseCheckout true
-
-echo "folder-name/*" >> .git/info/sparse-checkout
-
-git pull origin main
-
-```
+All the files in folder `version1` and `version2` were configured to run the data pipeline. You can download the file to run on local machine or use GitHub Codespaces.
 
 ## How to run the code
 
-1. Build the pipeline:
+1. Build the Docker image:
 
 ```
 docker build -t taxi_ingest:v001 .

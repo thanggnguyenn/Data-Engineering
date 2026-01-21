@@ -64,3 +64,19 @@ docker run -it \
 ## Results
 
 Built and ran successfully the data pipeline in local machine with Docker and use Compute Engine in Google Cloud Platform to run the same pipeline.
+
+## Comparisions: version 1 vs. version 2
+
+Version 2 had [uv package](https://docs.astral.sh/uv/) create virtual environment, install and manage all necessary Python packages for this data pipeline. 
+
+`ingest_data.py`
+
+Python package used in each version
+
+| Version name | CLI | Time measure  |
+| :--------: | :-------- | -------- |
+| version1 | [argv](https://docs.python.org/3/library/argparse.html) | [time](https://docs.python.org/3/library/time.html) |
+| version2 | [click](https://click.palletsprojects.com/en/stable/) | [tqdm](https://tqdm.github.io/) |
+
+
+

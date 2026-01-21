@@ -41,12 +41,16 @@ docker run -it \
   taxi_ingest:v001 \
     --user=root \
     --password=root \
-    --host=pg-database1 \
+    --host=pgdatabase \
     --port=5432 \
     --db=ny_taxi \
-    --table_name=yellow_taxi_trips \
-    --url=https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet
+    --table_name=yellow_taxi_trips_v001 \ 
+    --year=2021 \
+    --month=1 \
+    --chunksize=100000
 ```
+
+Replace --table_name=yellow_taxi_trips_v001 with --table_name=yellow_taxi_trips_v002 when using version2.
 
 ## Results
 

@@ -29,8 +29,10 @@ docker build -t taxi_ingest:v001 .
 2. Setup and run PostgreSQL and PGAdmin using Docker Compose:
 
 ```
-docker compose up
+docker-compose up
 ```
+
+> Note: this command assumes that the ny_taxi_postgres_data used for mounting the volume is in the same directory as docker-compose.yaml.
 
 3. Run the pipeline with Docker:
 
@@ -52,6 +54,8 @@ Built and ran successfully the data pipeline in local machine with Docker and us
 
 ## Comparisions: version 1 vs. version 2
 
+Version 1 installed directly Python package inside Docker container.
+
 Version 2 had [uv package](https://docs.astral.sh/uv/) create virtual environment, install and manage all necessary Python packages for this data pipeline. 
 
 `ingest_data.py`
@@ -62,6 +66,10 @@ Python package used in each version
 | :--------: | :-------- | -------- |
 | version1 | [argv](https://docs.python.org/3/library/argparse.html) | [time](https://docs.python.org/3/library/time.html) |
 | version2 | [click](https://click.palletsprojects.com/en/stable/) | [tqdm](https://tqdm.github.io/) |
+
+## Reference
+
+1. [Docker workshop](https://github.com/alexeygrigorev/workshops/tree/main/dezoomcamp-docker)
 
 
 
